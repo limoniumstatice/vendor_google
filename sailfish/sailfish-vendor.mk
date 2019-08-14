@@ -16,25 +16,10 @@
 
 PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/bin/move_widevine_data.sh:system/bin/move_widevine_data.sh \
-    vendor/google/sailfish/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:system/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/google/sailfish/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:system/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/google/sailfish/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:system/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.android.vzwomatrigger.xml:system/etc/permissions/com.android.vzwomatrigger.xml \
     vendor/google/sailfish/proprietary/etc/permissions/com.google.android.camera.experimental2016.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.verizon.apn.xml:system/etc/permissions/com.verizon.apn.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.verizon.embms.xml:system/etc/permissions/com.verizon.embms.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.verizon.provider.xml:system/etc/permissions/com.verizon.provider.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/com.verizon.services.xml:system/etc/permissions/com.verizon.services.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/features-verizon.xml:system/etc/permissions/features-verizon.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/obdm_permissions.xml:system/etc/permissions/obdm_permissions.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/google/sailfish/proprietary/etc/permissions/vzw_mvs_permissions.xml:system/etc/permissions/vzw_mvs_permissions.xml \
+   vendor/google/sailfish/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
     vendor/google/sailfish/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
     vendor/google/sailfish/proprietary/etc/sysconfig/pixel_2016_exclusive.xml:system/etc/sysconfig/pixel_2016_exclusive.xml \
-    vendor/google/sailfish/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/sailfish/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/google/sailfish/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/google/sailfish/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
@@ -55,43 +40,23 @@ PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/google/sailfish/proprietary/lib64/vendor.qti.atcmdfwd@1.0.so:system/lib64/vendor.qti.atcmdfwd@1.0.so \
     vendor/google/sailfish/proprietary/lib64/vendor.qti.qcril.am@1.0.so:system/lib64/vendor.qti.qcril.am@1.0.so \
-    vendor/google/sailfish/proprietary/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:system/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
-    vendor/google/sailfish/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:system/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 
 PRODUCT_PACKAGES += \
-    VZWAPNLib \
     ims \
     Asdiv \
-    CNEService \
-    CarrierSetup \
-    ConnMO \
-    DCMO \
-    DMService \
-    DiagMon \
     HotwordEnrollmentOKGoogleWCD9335 \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
-    MyVerizonServices \
-    OBDM_Permissions \
-    OemDmTrigger \
-    SprintDM \
-    SprintHM \
-    VerizonAuthDialog \
-    VzwOmaTrigger \
-    WfcActivation \
-    obdm_stub \
     qcrilmsgtunnel \
     LowPowerMonitorDeviceInterface \
     LowPowerMonitorDeviceStub \
     PowerAnomalyDataModemInterface \
     PowerAnomalyStub \
-    VerizonUnifiedSettings \
     com.google.android.camera.experimental2016 \
     qcrilhook
 PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/vendor/app/embms/oem/config_params.xml:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/config_params.xml \
     vendor/google/sailfish/proprietary/vendor/app/embms/oem/provisioning_params.xml:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/provisioning_params.xml \
-    vendor/google/sailfish/proprietary/vendor/app/embms/oem/verizon_config_params.txt:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/verizon_config_params.txt \
     vendor/google/sailfish/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/google/sailfish/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
     vendor/google/sailfish/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
@@ -182,7 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/PowerAnomalyStub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/PowerAnomalyStub.xml \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/embms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/embms.xml \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
-    vendor/google/sailfish/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/rcsservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/rcsservice.xml \
     vendor/google/sailfish/proprietary/vendor/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/telephonyservice.xml \
@@ -749,7 +713,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sailfish/proprietary/vendor/qcril_database/upgrade/5_update_india_ecc.sql:$(TARGET_COPY_OUT_VENDOR)/qcril_database/upgrade/5_update_india_ecc.sql
 
 PRODUCT_PACKAGES += \
-    QAS_DVC_MSP \
     QtiTelephonyService \
     RCSBootstraputil \
     SecureExtAuthService \
@@ -762,8 +725,6 @@ PRODUCT_PACKAGES += \
     imssettings \
     radioconfig \
     shutdownlistener \
-    vzw_msdc_api \
     QtiTelephonyServicelibrary \
     embmslibrary \
-    qti-vzw-ims-internal \
     rcsservice
