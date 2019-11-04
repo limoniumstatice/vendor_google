@@ -17,15 +17,10 @@
 PRODUCT_COPY_FILES += \
     vendor/google/bonito/proprietary/etc/firmware/music_detector.descriptor:system/etc/firmware/music_detector.descriptor \
     vendor/google/bonito/proprietary/etc/firmware/music_detector.sound_model:system/etc/firmware/music_detector.sound_model \
-    vendor/google/bonito/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/google/bonito/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
-    vendor/google/bonito/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
     vendor/google/bonito/proprietary/etc/permissions/com.google.modemservice.xml:system/etc/permissions/com.google.modemservice.xml \
     vendor/google/bonito/proprietary/etc/permissions/com.google.omadm.trigger.xml:system/etc/permissions/com.google.omadm.trigger.xml \
-    vendor/google/bonito/proprietary/etc/permissions/com.verizon.embms.xml:system/etc/permissions/com.verizon.embms.xml \
-    vendor/google/bonito/proprietary/etc/permissions/com.verizon.provider.xml:system/etc/permissions/com.verizon.provider.xml \
     vendor/google/bonito/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
-    vendor/google/bonito/proprietary/etc/permissions/features-verizon.xml:system/etc/permissions/features-verizon.xml \
     vendor/google/bonito/proprietary/etc/permissions/lpa.xml:system/etc/permissions/lpa.xml \
     vendor/google/bonito/proprietary/etc/permissions/privapp-permissions-bonito.xml:system/etc/permissions/privapp-permissions-bonito.xml \
     vendor/google/bonito/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
@@ -53,43 +48,27 @@ PRODUCT_COPY_FILES += \
     vendor/google/bonito/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
     vendor/google/bonito/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/google/bonito/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
-    vendor/google/bonito/proprietary/priv-app/EuiccGoogle/esim-full-v0.img:system/priv-app/EuiccGoogle/esim-full-v0.img \
-    vendor/google/bonito/proprietary/priv-app/EuiccGoogle/esim-v1.img:system/priv-app/EuiccGoogle/esim-v1.img
 
 PRODUCT_PACKAGES += \
-    QAS_DVC_MSP \
-    QAS_DVC_MSP_VZW \
-    QtiTelephonyService \
-    datastatusnotification \
     embms \
     ims \
-    remotesimlockservice \
     uceShimService \
     uimlpaservice \
-    vzw_msdc_api \
     CNEService \
     CarrierSetup \
     DMService \
-    EuiccGoogle \
     HotwordEnrollmentOKGoogleRT5514 \
     HotwordEnrollmentXGoogleRT5514 \
     ModemService \
     OemDmTrigger \
-    SprintDM \
-    SprintHM \
-    VerizonAuthDialog \
-    WfcActivation \
     grilservice \
     qcrilmsgtunnel \
     LowPowerMonitorDeviceInterface \
     LowPowerMonitorDeviceRpm \
     PowerAnomalyDataModemInterface \
     PowerAnomalyQcril \
-    QtiTelephonyServicelibrary \
-    VerizonUnifiedSettings \
     com.qualcomm.qti.uceservice-V2.0-java \
     embmslibrary \
     qcrilhook \
     uimlpalibrary \
-    uimremotesimlocklibrary \
     vendor.qti.ims.callinfo-V1.0-java

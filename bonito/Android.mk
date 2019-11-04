@@ -19,50 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter bonito sargo,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QAS_DVC_MSP
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/QAS_DVC_MSP/QAS_DVC_MSP.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QAS_DVC_MSP_VZW
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyService
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := datastatusnotification
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/datastatusnotification/datastatusnotification.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := embms
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
@@ -77,17 +33,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := remotesimlockservice
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/remotesimlockservice/remotesimlockservice.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -118,32 +63,9 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vzw_msdc_api
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/vzw_msdc_api/vzw_msdc_api.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := CarrierSetup
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/CarrierSetup/CarrierSetup.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -157,18 +79,6 @@ LOCAL_MODULE := DMService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := EuiccGoogle
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/EuiccGoogle/EuiccGoogle.apk
-LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -217,54 +127,6 @@ LOCAL_MODULE := OemDmTrigger
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/OemDmTrigger/OemDmTrigger.apk
 LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SprintDM
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/SprintDM/SprintDM.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SprintHM
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/SprintHM/SprintHM.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := VerizonAuthDialog
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/VerizonAuthDialog/VerizonAuthDialog.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := WfcActivation
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/WfcActivation/WfcActivation.apk
-LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -337,26 +199,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyServicelibrary
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/QtiTelephonyServicelibrary.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := VerizonUnifiedSettings
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/VerizonUnifiedSettings.jar
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.uceservice-V2.0-java
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
@@ -397,16 +239,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := uimremotesimlocklibrary
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/uimremotesimlocklibrary.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.ims.callinfo-V1.0-java
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar
@@ -415,6 +247,5 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
-
 
 endif
