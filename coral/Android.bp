@@ -746,6 +746,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqdMetaData",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqdMetaData.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqdMetaData.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.capabilityconfigstore@1.0",
 	owner: "google",
 	strip: {

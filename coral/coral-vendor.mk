@@ -1898,6 +1898,7 @@ PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
     liblbs_core \
     libplatformconfig \
+    libqdMetaData \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     libbtnv \
     CACertService \
